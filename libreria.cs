@@ -49,5 +49,15 @@ namespace biblioteca
             }
             return "non abbiamo libri di quell'autore";
         }
+
+        public int numerolibriTotali()
+        {
+            int output = 0;
+            foreach (var libro in elencoLibri)
+            {
+                output += 1;
+            }
+            return output;
+        }
     }
 }

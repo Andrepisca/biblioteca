@@ -20,6 +20,7 @@ namespace biblioteca
     /// </summary>
     public partial class MainWindow : Window
     {
+    //creo gli oggetti
         Libro l;
         libreria lb;
         public MainWindow()

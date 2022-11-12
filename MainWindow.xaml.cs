@@ -20,9 +20,33 @@ namespace biblioteca
     /// </summary>
     public partial class MainWindow : Window
     {
+        Libro l;
+        libreria lb;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnCreaLibro_Click(object sender, RoutedEventArgs e)
+        {
+            string[] s = txtinputlibro.Text.Split(',');
+            l = new Libro(s[0], s[1], int.Parse(s[2]), s[3], int.Parse(s[4]));
+        }
+
+        private void btncreaBiblioteca_Click(object sender, RoutedEventArgs e)
+        {
+            string[] s = txtInputlibreria.Text.Split(',');
+            lb = new libreria(s[0], s[1], int.Parse(s[2]), int.Parse(s[3]));
+        }
+
+        private void btnGetlibro_Click(object sender, RoutedEventArgs e)
+        {   
+            MessageBox.Show(lb.GetLibro(txtGetLibro.Text));
+        }
+
+        private void btnGetLibri_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(lb.GetLibri(txtGetLibri.Text));
         }
     }
 }

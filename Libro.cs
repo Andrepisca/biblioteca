@@ -26,7 +26,6 @@ namespace biblioteca
 
         public string toString()
         {
-
             return autore + " " + titolo + " " + annoDiPubblicazione + " " + editore + " " + numeroPagine;
         }
         public string readingTime()

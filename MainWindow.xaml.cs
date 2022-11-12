@@ -48,5 +48,10 @@ namespace biblioteca
         {
             MessageBox.Show(lb.GetLibri(txtGetLibri.Text));
         }
+
+        private void btnLibriTotali_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(lb.numerolibriTotali().ToString());
+        }
     }
 }

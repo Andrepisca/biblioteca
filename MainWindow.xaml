@@ -7,15 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txtinputlibro" HorizontalAlignment="Left" Margin="71,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnCreaLibro" HorizontalAlignment="Left" Margin="196,51,0,0" VerticalAlignment="Top" Content="aggiungi libro" Click="btnCreaLibro_Click"/>
-        <TextBox x:Name="txtInputlibreria" HorizontalAlignment="Left" Margin="71,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btncreaBiblioteca" Content="aggiungi la biblioteca" HorizontalAlignment="Left" Margin="196,76,0,0" VerticalAlignment="Top" Click="btncreaBiblioteca_Click"/>
-        <TextBox x:Name="txtGetLibro" HorizontalAlignment="Left" Margin="71,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnGetlibro" HorizontalAlignment="Left" Margin="196,99,0,0" VerticalAlignment="Top" Content="cerca il libro dal titolo" Click="btnGetlibro_Click"/>
-        <TextBox x:Name="txtGetLibri" HorizontalAlignment="Left" Margin="71,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnGetLibri" Content="cerca i libri di un autore" HorizontalAlignment="Left" Margin="196,122,0,0" VerticalAlignment="Top" Click="btnGetLibri_Click"/>
-        <Button x:Name="btnLibriTotali" HorizontalAlignment="Left" Margin="196,147,0,0" VerticalAlignment="Top" Content="numero libri totali"/>
+        <TextBox x:Name="txtinputlibro" HorizontalAlignment="Center" Margin="0,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <Button x:Name="btnCreaLibro" HorizontalAlignment="Left" Margin="471,9,0,0" VerticalAlignment="Top" Content="aggiungi libro" Click="btnCreaLibro_Click" Width="84"/>
+        <TextBox x:Name="txtInputlibreria" HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <Button x:Name="btncreaBiblioteca" Content="aggiungi la biblioteca" HorizontalAlignment="Left" Margin="471,34,0,0" VerticalAlignment="Top" Click="btncreaBiblioteca_Click" Width="127"/>
+        <TextBox x:Name="txtGetLibro" HorizontalAlignment="Center" Margin="0,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <Button x:Name="btnGetlibro" HorizontalAlignment="Left" Margin="471,57,0,0" VerticalAlignment="Top" Content="cerca il libro dal titolo" Click="btnGetlibro_Click" Width="127"/>
+        <TextBox x:Name="txtGetLibri" HorizontalAlignment="Center" Margin="0,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <Button x:Name="btnGetLibri" Content="cerca i libri di un autore" HorizontalAlignment="Left" Margin="471,80,0,0" VerticalAlignment="Top" Click="btnGetLibri_Click" Width="138"/>
+        <Button x:Name="btnLibriTotali" HorizontalAlignment="Left" Margin="471,105,0,0" VerticalAlignment="Top" Content="numero libri totali" Click="btnLibriTotali_Click" Width="106"/>
+        <TextBox x:Name="txtIstruzione1" HorizontalAlignment="Left" Margin="6,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="324" TextChanged="TextBox_TextChanged" Text=" autore,titolo, annoDiPubblicazione, editore, numeroPagine"/>
+        <TextBox x:Name="txtIstruzione2" HorizontalAlignment="Left" Margin="6,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="324" TextChanged="TextBox_TextChanged" Text="nomeLibreria,indirizzo,apertura,chiusura"/>
+        <TextBox x:Name="txtIstruzione3" HorizontalAlignment="Left" Margin="6,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" Text="per gli orari solo le ore"/>
 
     </Grid>
 </Window>
